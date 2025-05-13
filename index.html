@@ -11,9 +11,32 @@
     <title>TypeRacer</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
-      <h1>TypeRacer</h1>
-      <button class="instructions-btn">Instructions</button>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+        <h1>TypeRacer</h1>
+        <button class="instructions-btn">Instructions</button>
+      </div>
     </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+      <!-- Dropdown Row -->
+      <div class="row justify-content-start">
+        <div class="col-8">
+          <div class="input-group">
+            <!-- Label -->
+            <span class="input-group-text" id="difficulty-label">Select difficulty:</span>
+            <!-- Dropdown -->
+            <select id="difficulty-select" class="form-select" aria-label="Select Difficulty" aria-describedby="difficulty-label">
+              <option selected>Choose Difficulty</option>
+              <option value="1">Easy</option>
+              <option value="2">Medium</option>
+              <option value="3">Hard</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
